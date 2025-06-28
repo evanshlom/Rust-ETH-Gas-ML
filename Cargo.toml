@@ -1,0 +1,22 @@
+# Package metadata section
+# Defines the project name, version, and Rust edition
+[package]
+# The name of our binary/library crate
+name = "tch-hft-predictor"
+# Semantic versioning for our project
+version = "0.1.0"
+# Using Rust 2021 edition for latest language features
+edition = "2021"
+
+# Dependencies section
+# Lists all external crates this project depends on
+[dependencies]
+# PyTorch bindings for Rust - provides tensor operations and neural networks
+# Version 0.17.0 is stable and compatible with recent PyTorch versions
+tch = "0.17.0"
+# Random number generation for synthetic data
+# Used to generate realistic gas price patterns
+rand = "0.8"
+# ANSI terminal colors for prettier console output
+# Makes training progress easier to read
+ansi_term = "0.12"
